@@ -14,6 +14,6 @@ int nums = 0;
 %%
 
 int main(void){
-        yylex();
-        printf("Found %d digits.\n", nums);
+    yylex();
+    printf("Found %d digits.\n", nums);
 }
