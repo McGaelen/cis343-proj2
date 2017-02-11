@@ -8,7 +8,7 @@
 
 %%
 
-([a-z]*[0-9]*)+@[a-z]+(\.[a-z]+)+     { return(EMAIL); } //Email
+([a-z]|[0-9])([a-z]*[0-9]*)*@[a-z]+(\.[a-z]+)+     { return(EMAIL); } //Email
 [A-Z][a-z]+         { return(NAME); } //Name
 [0-9]{3}-[0-9]{4}   { return(PHONE_NUMBER); } //Phone number
 [0-9]{5}            { return(ZIP_CODE); } //Zip code

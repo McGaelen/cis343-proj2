@@ -1579,3 +1579,7 @@ yyreturn:
 int main(void){
 	yyparse();
 }
+
+int yyerror (char *msg) {
+	return fprintf (stderr, "YACC: %s\n", msg);
+}
